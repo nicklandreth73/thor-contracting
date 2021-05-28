@@ -15,15 +15,10 @@ function Heading() {
             onClick={() => setExpanded(expanded ? false : "expanded")}
           />
           <Navbar.Collapse id="responsive-navbar-nav">
-            {/* <img
-            src="images\John Thoreson Logo.png"
-            alt="Thor Contracting Logo"
-            className="navbar-logo"
-          /> */}
             <Link
               className="navbar-item"
               onClick={() => setExpanded(false)}
-              to="/"
+              to="/home"
             >
               <span className="navbar-text">Home</span>
             </Link>

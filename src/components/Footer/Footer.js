@@ -100,6 +100,7 @@ export default function Footer() {
 
   return (
     <>
+      <div className="phantom-footer"></div>
       <footer className="footer">
         <img
           className="logo"

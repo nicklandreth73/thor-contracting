@@ -5,7 +5,7 @@ import { Card, Button } from "react-bootstrap";
 export default function ContactForm() {
   return (
     <Card className="contact-card" style={{ width: "100rem" }}>
-      <Card.Body>
+      <Card.Body className="contact-card-body">
         <h1 className="form-title">How can we help you?</h1>
         <Form className="form">
           <Form.Group>

@@ -18,7 +18,7 @@ function Heading() {
             <Link
               className="navbar-item"
               onClick={() => setExpanded(false)}
-              to="/home"
+              to="/"
             >
               <span className="navbar-text">Home</span>
             </Link>

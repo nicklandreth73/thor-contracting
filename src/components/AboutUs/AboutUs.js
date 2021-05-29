@@ -37,21 +37,27 @@ export default function AboutUs() {
       </Card>
 
       <div className="aboutus-img-container">
-        <img
-          src="\images\John at beach.jpg"
-          alt="John Thoreson at beach in coos bay with sunglasses"
-          className="aboutus-imgs"
-        />
-        <img
-          src="\images\John black and white glasses.jpg"
-          alt="Black and white of John Thoreson with glasses"
-          className="aboutus-imgs"
-        />
-        <img
-          src="\images\John Ethiopian Resteraunt.jpg"
-          alt="John Thoreson at an Ethiopian resteraunt"
-          className="aboutus-imgs"
-        />
+        <Card className="aboutus-img">
+          <img
+            src="\images\John at beach.jpg"
+            alt="John Thoreson at beach in coos bay with sunglasses"
+            className="aboutus-imgs"
+          />
+        </Card>
+        <Card className="aboutus-img">
+          <img
+            src="\images\John black and white glasses.jpg"
+            alt="Black and white of John Thoreson with glasses"
+            className="aboutus-imgs"
+          />
+        </Card>
+        <Card className="aboutus-img">
+          <img
+            src="\images\John Ethiopian Resteraunt.jpg"
+            alt="John Thoreson at an Ethiopian resteraunt"
+            className="aboutus-imgs"
+          />
+        </Card>
       </div>
     </>
   );

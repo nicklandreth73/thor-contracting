@@ -66,48 +66,72 @@
   background-color: #2b272b !important;
   max-width: 1200px;
   display: block;
-  border: 1px solid #2b2c20 !important;
-  border-radius: 400px;
   padding: 5px;
+  border-radius: 20px !important;
+}
+.article-container-card {
+  border: 0.2px solid #2b2c20 !important;
+  border-radius: 20px !important;
 }
 .aboutus-img-container {
   display: block;
+  border: 0.2px solid #2b2c20 !important;
+  border-radius: 20px !important;
 }
 .article {
-  background-color: #fff;
+  background-color: #000;
   height: 100%;
   width: 100%;
   color: #000;
   padding: 10px;
+  border-radius: 20px;
 }
 .article-title {
   text-align: center;
+  background-color: #fff;
+  border-radius: 15px;
 }
 .article-line {
   margin: 1em auto;
   width: 70%;
+  background-color: #fdb100;
+  border: 1px solid #fdfdfd;
 }
 .article-content {
   text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
 }
 .aboutus-imgs {
   height: 40vh;
-  padding: 2vh 2vh 0 2vh;
+  width: 55vh;
 }
+.aboutus-img {
+  display: inline-block !important;
+  border-radius: 20px;
+  background-color: #2b272b !important;
+  padding: 1vh;
+}
+
 .aboutus-img-container {
   background-color: #2b272b !important;
   margin-top: 2vh;
   display: block;
   border-radius: 20px;
+  border: 1px solid #2b2c20;
+  padding: 1vh;
 }
 /* Contact Form Styles */
 .contact-card {
   display: inline-block !important;
   color: #cd6827;
-  border-radius: 50px !important;
-  background-color: #2b272b !important;
+  border-radius: 20px !important;
+  background-color: #272427 !important;
   max-width: 60vw !important;
-  border: 2px solid #2b2720 !important;
+  border: 2px solid #2e2a22 !important;
+}
+.contact-card-body {
+  border-radius: 20px !important;
 }
 .form {
   margin-top: 2rem;
@@ -135,19 +159,47 @@
 /* Services rules */
 
 .services-container {
-  position: sticky;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: flex-start;
   margin: 10px;
   padding: 15px;
-  border-radius: 7%;
+  background-color: #231f20;
+  overflow: auto;
 }
 
 .services-card {
-  flex: 0 1 150px;
+  flex-grow: 1;
+  flex-basis: 500px;
+  max-width: 900px;
+  height: 60%;
+  padding: 2vh;
+  margin: 2vh;
+  border-radius: 20px !important;
+  border: 2px solid #dda830 !important;
 }
+.services-title {
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+}
+
 .services-image {
+  width: 100%;
+  max-height: 40vh;
+}
+.services-service {
+  background-color: #fff;
+  color: #000;
+}
+.services-service-list {
+  background-color: #fff;
+  color: #000;
+  margin: 0.5rem;
 }
 /* Footer rules */
 .footer {

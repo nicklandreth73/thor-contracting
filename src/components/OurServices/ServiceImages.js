@@ -1,17 +1,21 @@
 const paint = "\\images\\paint.jpg";
 const beautifulKichenInProgress = "\\images\\beautifulKitchenInProgress.jpg";
 const roomwithRoofDamage = "\\images\\roomWithRoofDamage.jpg";
+const mossyRoof = "\\images\\mossyRoof.jpg";
 
 const ServiceImages = [
   {
     link: paint,
     alt: "A paint brush and container",
+    title: "Painting",
+    services: ["Interior painting", "Exterior painting"],
   },
   {
-    link: beautifulKichenInProgress,
-    alt: "Beautiful Kichen In Progress of repair",
+    link: mossyRoof,
+    alt: "An old mossy roof",
+    title: "Roofing",
+    services: ["Shingle replacement", "Framing"],
   },
-  { link: roomwithRoofDamage, alt: "A room with roof Damage" },
 ];
 
 export default ServiceImages;

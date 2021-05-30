@@ -27,7 +27,7 @@ export default function Footer() {
           ...prev,
           facebook: true,
           any: true,
-          facebookAddress: "John@facebook.com",
+          facebookAddress: "https://www.facebook.com/john.thoreson.106",
         }));
       },
       setFalse: () => {
@@ -40,6 +40,7 @@ export default function Footer() {
       },
       service: "facebook",
       icon: faFacebookSquare,
+      link: "https://www.facebook.com/john.thoreson.106",
     },
     {
       setTrue: () =>
@@ -47,7 +48,7 @@ export default function Footer() {
           ...prev,
           youtube: true,
           any: true,
-          youtubeAddress: "John@youtube.com",
+          youtubeAddress: "https://www.youtube.com",
         })),
       setFalse: () =>
         setExpanded((prev) => ({
@@ -58,6 +59,7 @@ export default function Footer() {
         })),
       service: "youtube",
       icon: faYoutube,
+      link: "https://youtube.com",
     },
     {
       setTrue: () =>
@@ -76,6 +78,7 @@ export default function Footer() {
         })),
       service: "email",
       icon: faEnvelope,
+      link: "mailto:John@ThorContracting.org",
     },
     {
       setTrue: () =>
@@ -94,13 +97,13 @@ export default function Footer() {
         })),
       service: "phone",
       icon: faPhone,
-      address: "",
+      link: "tel:971-332-2151",
     },
   ];
 
   return (
     <>
-      <div className="phantom-footer"></div>
+      <div className="phantom-footer" />
       <footer className="footer">
         <img
           className="logo"
@@ -118,25 +121,27 @@ export default function Footer() {
           <h2 className="footer-title-name">Thor Contracting</h2>
           <h2 className="footer-title-ccb">CCB#219680</h2>
           {icons.map((service) => (
-            <div
-              key={service.service}
-              className="icon-div"
-              onMouseEnter={service.setTrue}
-              onMouseLeave={() => setTimeout(service.setFalse, 4000)}
-            >
-              <FontAwesomeIcon
-                className={
-                  iconExpanded[service.service]
-                    ? "footer-icons hovered"
-                    : "footer-icons not-hovered"
-                }
-                icon={service.icon}
-                style={{ marginLeft: "2rem" }}
-              ></FontAwesomeIcon>
-              <span className="icon-text" style={{ display: "inline-block" }}>
-                {iconExpanded[service.service + "Address"]}
-              </span>
-            </div>
+            <a href={service.link} key={service.service}>
+              <div
+                className="icon-div"
+                onMouseEnter={service.setTrue}
+                onMouseLeave={() => setTimeout(service.setFalse, 4000)}
+              >
+                <FontAwesomeIcon
+                  className={
+                    iconExpanded[service.service]
+                      ? "footer-icons hovered"
+                      : "footer-icons not-hovered"
+                  }
+                  icon={service.icon}
+                  style={{ marginLeft: "2rem" }}
+                ></FontAwesomeIcon>
+
+                <span className="icon-text" style={{ display: "inline-block" }}>
+                  {iconExpanded[service.service + "Address"]}
+                </span>
+              </div>
+            </a>
           ))}
         </div>
       </footer>

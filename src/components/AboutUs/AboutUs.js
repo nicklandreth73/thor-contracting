@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 export default function AboutUs() {
   return (
-    <>
+    <div className="about-us-container">
       <Card className="article-container">
         <div className="article">
           <h2 className="article-title">About Us</h2>
@@ -59,6 +59,6 @@ export default function AboutUs() {
           />
         </Card>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,6 +1,4 @@
 const paint = "\\images\\paint.jpg";
-const beautifulKichenInProgress = "\\images\\beautifulKitchenInProgress.jpg";
-const roomwithRoofDamage = "\\images\\roomWithRoofDamage.jpg";
 const mossyRoof = "\\images\\mossyRoof.jpg";
 
 const ServiceImages = [

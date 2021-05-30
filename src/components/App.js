@@ -5,6 +5,7 @@ import Footer from "./Footer/Footer";
 import Services from "./OurServices/Services";
 import Home from "./Home/Home";
 import ContactForm from "./Contact/ContactForm";
+import OurWork from "./OurWork/OurWork";
 import AboutUs from "./AboutUs/AboutUs";
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services />
+            </Route>
+            <Route path="/our-work">
+              <OurWork />
             </Route>
             <Route path="/">
               <Home />

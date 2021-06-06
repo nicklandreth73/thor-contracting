@@ -86,7 +86,7 @@ export default function Footer() {
           ...prev,
           phone: true,
           any: true,
-          phoneAddress: "555-555-5555",
+          phoneAddress: "971-332-2151",
         })),
       setFalse: () =>
         setExpanded((prev) => ({
@@ -103,7 +103,6 @@ export default function Footer() {
 
   return (
     <>
-      <div className="phantom-footer" />
       <footer className="footer">
         <img
           className="logo"

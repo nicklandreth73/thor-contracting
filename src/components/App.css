@@ -20,27 +20,27 @@
   grid-area: main;
   display: flex;
   flex-direction: column;
-  margin-bottom: 10vh;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 90%;
+  height: 100vh;
+  min-height: 300px;
+  width: 90vw;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 /* Navbar Styles */
 .heading {
-  position: sticky;
+  position: fixed !important;
   grid-area: header;
   margin-left: 0;
   padding: 0.5rem;
-  font-style: none;
   border-bottom: 1px solid #dda830;
   background-color: #231f20;
 }
 .phantom-header {
   display: block;
-  height: 10vh;
-  margin-bottom: 5vh;
+  height: 50px;
 }
 
 .navbar-item {
@@ -56,11 +56,11 @@
 }
 /* Homepage styles */
 .home-carousel-img {
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
 }
 .carousel-caption {
-  top: 5vh;
+  top: 25vh;
   bottom: auto;
   background-color: transparent;
 }
@@ -71,17 +71,14 @@
 
 /* About us styles */
 .about-us-container {
-  overflow: auto;
-  height: 100%;
-  margin-bottom: 20vh;
-  display: flex;
+  overflow-y: auto;
+  height: fit-content;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .article-container {
   background-color: #2b272b !important;
-  max-width: 1200px;
   display: block;
   padding: 5px;
   border-radius: 20px !important;
@@ -97,12 +94,10 @@
   border: 0.2px solid #2b2c20 !important;
   border-radius: 20px !important;
   justify-content: space-around;
-  width: 90vw;
+  width: 86vw;
 }
 .article {
   background-color: #000;
-  height: 100%;
-  width: 100%;
   color: #000;
   padding: 10px;
   border-radius: 20px;
@@ -135,13 +130,15 @@
 .form-container {
   overflow: auto;
   height: 100%;
-  margin-bottom: 20vh;
+  margin-bottom: 5vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .contact-card {
+  margin-top: 6rem;
+
   display: inline-block !important;
   color: #cd6827;
   border-radius: 20px !important;
@@ -178,8 +175,8 @@
 /* Services rules */
 
 .services-container {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -226,8 +223,7 @@
   justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
-  height: 100vh;
-  margin-bottom: 15vh;
+  height: fit-content;
 }
 .our-work-card {
   max-width: 600px;
@@ -247,8 +243,8 @@
   align-items: center;
   bottom: 0px;
   width: 100%;
-  margin-top: 6vh;
-  min-height: 7vh;
+  margin-top: 2vh;
+  min-height: 90px;
   border-top: 1px solid #dda830;
   background-color: #231f20;
 }
@@ -265,7 +261,7 @@
   margin-left: auto;
   order: 0;
   height: 150px;
-  margin: 1vh;
+  margin: 10px;
   margin-top: 0.5rem;
   margin-left: 3rem;
 }
@@ -291,11 +287,14 @@
   }
 }
 @media only screen and (max-width: 1320px) {
+  .about-us-container {
+    margin: 0;
+  }
   .navbar-item {
     padding-inline: 3.5rem !important;
   }
   .footer {
-    margin-top: 150px;
+    min-height: 488px;
   }
   .icon-div {
     display: block;
@@ -339,7 +338,7 @@
 }
 @media only screen and (max-width: 1400px) {
   .aboutus-img-container {
-    margin-left: 10vh;
+    margin-left: auto;
     margin-right: auto;
   }
 }

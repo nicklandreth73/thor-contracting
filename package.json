@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "aws-sdk": "^2.922.0",
     "bootstrap": "^5.0.1",
     "emailjs-com": "^2.6.4",
     "react": "^17.0.2",
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && aws s3 rm s3://thorcontracting.com/ --recursive && aws s3 cp ./build s3://thorcontracting.com/ --recursive --acl public-read"
   },
   "eslintConfig": {
     "extends": [

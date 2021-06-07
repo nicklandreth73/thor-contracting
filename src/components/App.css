@@ -27,6 +27,7 @@
   width: 90vw;
   overflow: auto;
   overflow-x: hidden;
+  margin-bottom: 4vh;
 }
 
 /* Navbar Styles */
@@ -223,7 +224,8 @@
   justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
-  height: fit-content;
+  flex: 1 1 auto;
+  height: 100vh;
 }
 .our-work-card {
   max-width: 600px;
@@ -232,11 +234,13 @@
   padding: 0.5rem;
   background-color: #fff;
   border-radius: 10px;
+  margin-bottom: 3rem;
 }
 
 /* Footer rules */
 
 .footer {
+  z-index: 1;
   grid-area: footer;
   display: flex;
   column-gap: 2em;
@@ -302,8 +306,13 @@
 }
 /* These rules will be applied when menu fully collapses into hamburger */
 @media only screen and (max-width: 992px) {
+  .heading {
+    height: 55px;
+  }
+
   .navbar-text {
     display: block;
+    padding: 4px !important;
   }
   .navbar-text:hover {
     border: 1px solid #dda830;
@@ -313,6 +322,11 @@
   }
   .navbar-item {
     padding-top: 0;
+    padding-inline: 1px !important;
+    height: 1px;
+  }
+  .navbar-item:first-of-type {
+    padding-top: 5px;
   }
   .contact-card {
     max-width: 85vw !important;
